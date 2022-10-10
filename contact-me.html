@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <style media="screen">
+     .my-body{
+       background-color:lightgray;
+       color: #40514E;
+       font-family: 'Merriweather', serif;
+     }
+     .about-me {
+       color: gray;
+       text-decoration: none;
+       font-size: 14px;
+       position: absolute;
+       left: 250px;
+       top: 10px;
+       font-family: 'Alkalami', serif;
+     }
+
+     .contact-me {
+       color: gray;
+       text-decoration: none;
+       font-size: 14px;
+       position: absolute;
+       left: 320px;
+       top: 10px;
+       font-family: 'Alkalami', serif;
+     }
+
+     .about-me:hover {
+       text-decoration: overline;
+       text-decoration-color: pink;
+     }
+
+     .contact-me:hover {
+       text-decoration: overline;
+       text-decoration-color: pink;
+     }
+
+     .logo {
+       color: gray;
+       position: absolute;
+       right: 150px;
+       top: 10px;
+     }
+
+     .logo:hover {
+       color: #333333;
+     }
+
+     .instagram-logo {
+       color: gray;
+       position: absolute;
+       right: 100px;
+       top: 10px;
+     }
+
+     .instagram-logo:hover {
+       color: #333333;
+     }
+     .positioning{
+       position: absolute;
+       left: 40px;
+     }
+     .details{
+       color: #40514E;
+       margin: 6px;
+       height: 55px;
+       width: 80%;
+     }
+     .details1{
+       color: #66BFBF;
+       font-size: 20px;
+       margin: 50px auto 0 auto;
+       font-family: 'Montserrat', sans-serif;
+     }
+     .message{
+       margin: 20px;
+       height: 150px;
+       width: 80%;
+       position: relative;
+       right: 12px;
+     }
+     .content{
+       margin: auto 480px;
+     }
+     .send{
+       height: 50px;
+       width: 20%;
+       background-color: #66BFBF;
+       border: 0;
+       position: absolute;
+       left: 10px;
+       font-family: 'PT Sans Narrow', sans-serif;
+     }
+     .send:hover{
+       background-color:#2bc4ac;
+       width: 21%;
+     }
+     .space{
+       background-color: lightgray;
+       height: 50px;
+       width: 30%;
+       position: absolute;
+       right: 10px;
+       top: 700px;
+     }
+  </style>
+  <body class="my-body">
+    <a class="about-me" href="about-me.html">About</a>
+    <a class="contact-me" href="contact-me.html">contact</a>
+    <a class="logo" href="https://twitter.com/NehemiahChieme1" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+
+    <a class="instagram-logo" href="https://www.instagram.com/n_chiemerie1/" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="content">
+      <h2 class="details1">Contacts and Email address</h2>
+      <ul>
+        <li class="details">Phone number: +2347067053367</li>
+        <li class="details">Email: ncchiemerie448@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="positioning">
+      <form action="https://formspree.io/f/xvoyqokq" method="post">
+        <input class="details" type="text" name="Name" placeholder="Full Name" required><br>
+        <input class="details" type="email" name="Email" placeholder="Email" required><br>
+        <select class="details" name="Continent">
+          <option>Africa</option>
+          <option>Asia</option>
+          <option>North America</option>
+          <option>South America</option>
+          <option>Antarctica</option>
+          <option>Europe</option>
+          <option>Australia</option>
+        </select><br>
+        <textarea class="message" name="Message" placeholder="Message" cols="80"></textarea><br>
+        <button  class="send" type="submit">Send</button>
+      </form>
+    </div><br>
+    <div class="space">
+    </div>
+  </body>
+</html>
